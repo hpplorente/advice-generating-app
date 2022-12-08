@@ -18,7 +18,9 @@ function Advice() {
   return (
     <div>
       <div className="advice--container">
-        <h5 className="top--header">ADVICE</h5>
+        <h5 className="top--header">
+          ADVICE {count <= 0 ? "OF THE DAY" : `# ${count}`}
+        </h5>
         <h4>{`"${advice}"`}</h4>
         <svg
           className="divider"
